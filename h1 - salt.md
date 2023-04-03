@@ -52,7 +52,20 @@ Kirjauduin komennolla **vagrant ssh tmaster** ns. isäntäkoneelle, jolla hyväk
 
 <img width="182" alt="image" src="https://user-images.githubusercontent.com/101214286/229476421-5cef4298-c744-4f63-bd2a-45c80169dfce.png">
 
+## Esimerkit tiloista package, file, service, user, cmd.run
 
+### Package
+### File
+#### Service
+### User
+User-komennolla käskin molempien koneiden luoda uuden käyttäjän user1:n.
+
+<img width="337" alt="image" src="https://user-images.githubusercontent.com/101214286/229479643-0f49863d-50ba-4179-9463-9d186a471a15.png">
+
+### Cmd.run
+Käskin t001-koneen kertomaan komennolla: **sudo salt 't001' cdm.run 'hostname -I'**, mikä sen ip-osoite on.
+
+<img width="235" alt="image" src="https://user-images.githubusercontent.com/101214286/229478560-000efec0-031d-4e91-91ff-8d5c957209c1.png">
 
 ## Lähteet kaikkiin tehtäväkohtiin 
 Näistä sain apuja ja neuvoja tehtäviin.
