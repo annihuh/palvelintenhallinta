@@ -31,12 +31,15 @@ Käytössäni on läppäri, jossa Windows 11 sekä kaikki tarpeelliset päivityk
 Ensimmäisenä asensin Vagrantin koneelleni ohjeessa annetusta linkistä ja käynnistin tietokoneeni sen jälkeen uudestaan. Sen jälkeen avasin tietokoneellani PowerShellin adminina ja suoritin seuraavat komennot: 
 
 **Vagrant init debian/bullseye64** asentaakseni Debian 11
+
 <img width="270" alt="image" src="https://user-images.githubusercontent.com/101214286/229461896-742e5435-9838-4dce-9842-821ddd17a0ac.png">
 
 **Vagrant up** käynnistääkseni Vagrantin
+
 <img width="345" alt="image" src="https://user-images.githubusercontent.com/101214286/229462093-207a6e50-4e8b-40e3-ba16-c5df79e3f4c9.png">
 
 **Vagrant ssh** - varmistin, että psytyn ottamaan yhteyden koneeseen
+
 <img width="305" alt="image" src="https://user-images.githubusercontent.com/101214286/229462181-326fc8a2-817d-4cc5-be37-7228187d516a.png">
 
 ## 3 koneen verkon asennus
