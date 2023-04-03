@@ -53,7 +53,7 @@ Kirjauduin komennolla **vagrant ssh tmaster** ns. isäntäkoneelle, jolla hyväk
 <img width="182" alt="image" src="https://user-images.githubusercontent.com/101214286/229476421-5cef4298-c744-4f63-bd2a-45c80169dfce.png">
 
 ## Esimerkit tiloista package, file, service, user, cmd.run
-Katsoin ohjeesta mallia tässä vaiheessa.
+Katsoin opettajan ohjeesta mallia tässä vaiheessa.
 
 ### Package
 Asensin Apache2:n komennolla **sudo salt '*' state.single pkg.installed apache2**.
@@ -74,7 +74,6 @@ Loin komenolla **sudo salt '*' state.single file.managed '/tmp/hei'** uuden tied
 
 <img width="284" alt="image" src="https://user-images.githubusercontent.com/101214286/229484397-3f45d5e0-b711-441d-a26e-d15076230205.png">
 
-
 ### User
 User-komennolla käskin molempien koneiden luoda uuden käyttäjän user1:n.
 
@@ -87,13 +86,21 @@ Käskin t001-koneen kertomaan komennolla: **sudo salt 't001' state.single cdm.ru
 
 ##Infra koodina
 
-Luon tiedoston, johon kirjoitan koodia, jonka haluan orjien suorittavan masterin käskiessä. Loin hakemiston näin: **sudo mkdir -p /srv/salt/hello**. Siirryin hakemistoon ja loin tiedoston komennolla **sudoedit init.sls**, joka näyttää tältä:
+Luon tiedoston, johon kirjoitan koodia, jonka haluan orjien suorittavan masterin käskiessä. Loin hakemiston **sudo mkdir -p /srv/salt/hello**, johon loin tiedoston komennolla **sudoedit init.sls**. Se näyttää tältä:
 
-kuva
+
 
 Tässä lopputulos kun ajan koodin **sudo salt '*' state.apply hello**:
 
-## Lähteet kaikkiin tehtäväkohtiin 
+
+
+
+
+## Lähteet
 Näistä sain apuja ja neuvoja tehtäviin.
-Karvinen 2023: https://terokarvinen.com/2023/palvelinten-hallinta-2023-kevat/ 
-https://tuomasvalkamo.com/CMS-course/week-6/
+
+Karvinen, Tero 2023. Infra as Core course, h1 Suolaa. Luettavissa: https://terokarvinen.com/2023/palvelinten-hallinta-2023-kevat/. Luettu: 3.4.2023.
+
+Karvinen, Tero s.a. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/. Luettu: 3.4.2023.
+
+Valkamo, Tuomas 2022. Create Virtual Machines with Vagrant. Luettavissa: https://tuomasvalkamo.com/CMS-course/week-6/. Luettu: 3.4.2023.
