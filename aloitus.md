@@ -1,2 +1,3 @@
 #Aloitus
 Luodaan Githubia.
+$ ls
