@@ -1,2 +1,1 @@
-#Aloitus
-Luodaan Githubia.
+# Aloitus - luodaan Githubia
