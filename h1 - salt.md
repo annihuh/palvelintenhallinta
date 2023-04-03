@@ -44,7 +44,7 @@ Ensimmäisenä asensin Vagrantin koneelleni ohjeessa annetusta linkistä ja käy
 
 ## 3 koneen verkon asennus
 
-Loin tätä tehtäväkohtaa varten oman kansion /users/vagrant/saltdemo. Ja lisäsin init-tiedoston tähänkin kansioon. Kopioin sinne ready-made-tekstin. Käynnistin sen jälkeen virtuaalikoneet komennolla **vagrant up**.
+Loin tätä tehtäväkohtaa varten oman kansion /users/vagrant/saltdemo. Ja lisäsin init-tiedoston tähänkin kansioon. Kopioin sinne ready-made-tekstin. Käynnistin sen jälkeen virtuaalikoneet uudestaan komennolla **vagrant up**.
 
 ## Orjien hyväksyminen
 
