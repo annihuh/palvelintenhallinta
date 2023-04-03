@@ -86,18 +86,22 @@ Käskin t001-koneen kertomaan komennolla: **sudo salt 't001' state.single cdm.ru
 
 ##Infra koodina
 
-Luon tiedoston, johon kirjoitan koodia, jonka haluan orjien suorittavan masterin käskiessä. Loin hakemiston **sudo mkdir -p /srv/salt/hello**, johon loin tiedoston komennolla **sudoedit init.sls**. Se näyttää tältä:
+Luon tiedoston, johon kirjoitan koodia, jonka haluan orjien suorittavan masterin käskiessä. Loin hakemiston **sudo mkdir -p /srv/salt/hello**, johon loin tiedoston komennolla **sudoedit /srv/salt/hello/init.sls**. Se näyttää tältä:
 
+<img width="191" alt="image" src="https://user-images.githubusercontent.com/101214286/229516452-8af71b32-2e5b-45b8-b4dd-00619620103f.png">
 
+Seuraavaksi loin top.sls tiedoston, jonka sisältö on tämä:
+
+<img width="169" alt="image" src="https://user-images.githubusercontent.com/101214286/229516720-a1029c21-af4d-46b0-b440-bf1e052131bb.png">
 
 Tässä lopputulos kun ajan koodin **sudo salt '*' state.apply hello**:
 
+<img width="208" alt="image" src="https://user-images.githubusercontent.com/101214286/229516360-1b802a2e-3286-47d0-bd16-dee59eed7e18.png">
 
-
-
+Lopuksi vielä tuhosin kaikki koneet.
 
 ## Lähteet
-Näistä sain apuja ja neuvoja tehtäviin.
+Näistä lähteistä sain apuja ja neuvoja tehtäviin.
 
 Karvinen, Tero 2023. Infra as Core course, h1 Suolaa. Luettavissa: https://terokarvinen.com/2023/palvelinten-hallinta-2023-kevat/. Luettu: 3.4.2023.
 
