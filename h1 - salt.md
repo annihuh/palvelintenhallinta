@@ -94,7 +94,7 @@ Seuraavaksi loin top.sls tiedoston, jossa määritellään, että mikä orja tek
 
 <img width="169" alt="image" src="https://user-images.githubusercontent.com/101214286/229516720-a1029c21-af4d-46b0-b440-bf1e052131bb.png">
 
-Lopputulos kun ajan koodin **sudo salt '*' state.apply**.
+Lopputulos kun ajan komennon **sudo salt '*' state.apply**.
 
 <img width="206" alt="image" src="https://user-images.githubusercontent.com/101214286/229525510-9a0aca9c-fd41-4f96-96b4-ed9063a1196f.png">
 
