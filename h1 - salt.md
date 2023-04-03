@@ -53,10 +53,27 @@ Kirjauduin komennolla **vagrant ssh tmaster** ns. isäntäkoneelle, jolla hyväk
 <img width="182" alt="image" src="https://user-images.githubusercontent.com/101214286/229476421-5cef4298-c744-4f63-bd2a-45c80169dfce.png">
 
 ## Esimerkit tiloista package, file, service, user, cmd.run
+Katsoin ohjeesta mallia tässä vaiheessa.
 
 ### Package
-### File
-#### Service
+Asensin Apache2:n komennolla **sudo salt '*' state.single pkg.installed apache2**.
+
+<img width="307" alt="image" src="https://user-images.githubusercontent.com/101214286/229481802-7b9591ea-c303-429d-bd81-8776d40c0d1d.png">
+
+### Service
+Tarkistin komennolla **sudo salt '*' state.single service.running apache2**, että daemon eli apache2 pyörii taustalla. 
+
+<img width="283" alt="image" src="https://user-images.githubusercontent.com/101214286/229482472-b846349d-6aa0-4e00-81c2-e23df04d0f40.png">
+
+Sammutin sen lopuksi kuitenkin komennolla **sudo salt '*' state.single service.dead apache2**.
+
+<img width="272" alt="image" src="https://user-images.githubusercontent.com/101214286/229483457-ba0c2ea9-cd2e-4ac2-aad0-0b509f19cf6f.png">
+
+#### File
+Loin komenolla **sudo salt '*' state.single file.managed '/tmp/hei'** uuden tiedoston tmp kansioon.
+
+<img width="284" alt="image" src="https://user-images.githubusercontent.com/101214286/229484397-3f45d5e0-b711-441d-a26e-d15076230205.png">
+
 
 ### User
 User-komennolla käskin molempien koneiden luoda uuden käyttäjän user1:n.
