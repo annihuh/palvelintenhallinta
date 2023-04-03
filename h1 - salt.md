@@ -88,7 +88,7 @@ Käskin t001-koneen kertomaan komennolla: **sudo salt 't001' state.single cdm.ru
 
 Luon tiedoston, johon kirjoitan koodia, jonka haluan orjien suorittavan masterin käskiessä. Loin hakemiston **sudo mkdir -p /srv/salt/hello**, johon loin tiedoston komennolla **sudoedit /srv/salt/hello/init.sls**. Se näyttää tältä:
 
-<img width="191" alt="image" src="https://user-images.githubusercontent.com/101214286/229516452-8af71b32-2e5b-45b8-b4dd-00619620103f.png">
+<img width="191" alt="image" src="https://user-images.githubusercontent.com/101214286/229521682-a103e422-d401-475b-a911-627048a194b7.png">
 
 Seuraavaksi loin top.sls tiedoston, jossa määritellään, että mikä orja tekee mitäkin. Tässä tapauksessa kaikki eli molemmat orjat saavat saman käskyn. Tiedoston sisältö on tämä:
 
@@ -96,7 +96,7 @@ Seuraavaksi loin top.sls tiedoston, jossa määritellään, että mikä orja tek
 
 Tässä lopputulos kun ajan koodin **sudo salt '*' state.apply**:
 
-<img width="208" alt="image" src="https://user-images.githubusercontent.com/101214286/229516360-1b802a2e-3286-47d0-bd16-dee59eed7e18.png">
+<img width="208" alt="image" src="https://user-images.githubusercontent.com/101214286/229521808-bb8acd62-c723-48c7-8d79-f35b933f6af9.png">
 
 Lopuksi vielä tuhosin kaikki koneet.
 
