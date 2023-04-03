@@ -4,7 +4,7 @@ Tehtävän h1 raportti.
 Karvinen 2023: https://terokarvinen.com/2023/create-a-web-page-using-github/
 - Rekisteröityminen Githubiin
 - Uuden repositoryn luominen, määrittele:
-  - Julkinen
+  - Julkinen tiedosto
   - Kuvaus
   - Readme-tiedosto
   - GNU
