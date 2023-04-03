@@ -90,7 +90,7 @@ Luon tiedoston, johon kirjoitan koodia, jonka haluan orjien suorittavan masterin
 
 <img width="191" alt="image" src="https://user-images.githubusercontent.com/101214286/229516452-8af71b32-2e5b-45b8-b4dd-00619620103f.png">
 
-Seuraavaksi loin top.sls tiedoston, jonka sisältö on tämä:
+Seuraavaksi loin top.sls tiedoston, jossa määritellään, että mikä orja tekee mitäkin. Tässä tapauksessa kaikki eli molemmat orjat saavat saman käskyn. Tiedoston sisältö on tämä:
 
 <img width="169" alt="image" src="https://user-images.githubusercontent.com/101214286/229516720-a1029c21-af4d-46b0-b440-bf1e052131bb.png">
 
