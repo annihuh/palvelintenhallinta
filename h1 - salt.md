@@ -64,9 +64,9 @@ User-komennolla käskin molempien koneiden luoda uuden käyttäjän user1:n.
 <img width="337" alt="image" src="https://user-images.githubusercontent.com/101214286/229479643-0f49863d-50ba-4179-9463-9d186a471a15.png">
 
 ### Cmd.run
-Käskin t001-koneen kertomaan komennolla: **sudo salt 't001' cdm.run 'hostname -I'**, mikä sen ip-osoite on.
+Käskin t001-koneen kertomaan komennolla: **sudo salt 't001' state.single cdm.run 'hostname -I'**, mikä sen ip-osoite on.
 
-<img width="235" alt="image" src="https://user-images.githubusercontent.com/101214286/229478560-000efec0-031d-4e91-91ff-8d5c957209c1.png">
+<img width="292" alt="image" src="https://user-images.githubusercontent.com/101214286/229480783-0ad1899e-7c0b-4ff1-9b36-130b8857542d.png">
 
 ## Lähteet kaikkiin tehtäväkohtiin 
 Näistä sain apuja ja neuvoja tehtäviin.
