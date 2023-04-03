@@ -86,7 +86,7 @@ Käskin t001-koneen kertomaan komennolla: **sudo salt 't001' state.single cdm.ru
 
 ## Infra koodina
 
-Luon tiedoston, johon kirjoitan koodia, jonka haluan orjien suorittavan masterin käskiessä. Loin hakemiston **sudo mkdir -p /srv/salt/hello**, johon loin tiedoston komennolla **sudoedit /srv/salt/hello/init.sls**. Tiedoston sisältö näyttää tältä:
+Luon tiedoston, johon kirjoitan koodia, jonka haluan orjien suorittavan masterin käskiessä. Loin hakemiston **sudo mkdir -p /srv/salt/hello**, johon loin tiedoston komennolla **sudoedit /srv/salt/hello/init.sls**. Koodi luo uuden käyttäjän ja salasanan. Tiedoston sisältö näyttää tältä:
 
 <img width="196" alt="image" src="https://user-images.githubusercontent.com/101214286/229525321-5a65ac54-d6fd-4d39-bb78-00c3fb998e8a.png">
 
@@ -94,7 +94,7 @@ Seuraavaksi loin top.sls tiedoston, jossa määritellään, että mikä orja tek
 
 <img width="169" alt="image" src="https://user-images.githubusercontent.com/101214286/229516720-a1029c21-af4d-46b0-b440-bf1e052131bb.png">
 
-Ajaessani koodin se siis loi uuden käyttäjän ja salasanan. Lopputulos kun ajan koodin **sudo salt '*' state.apply**.
+Lopputulos kun ajan koodin **sudo salt '*' state.apply**.
 
 <img width="206" alt="image" src="https://user-images.githubusercontent.com/101214286/229525510-9a0aca9c-fd41-4f96-96b4-ed9063a1196f.png">
 
