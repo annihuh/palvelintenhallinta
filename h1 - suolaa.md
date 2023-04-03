@@ -1,4 +1,4 @@
-# h1 - Harjoittelua 
+# h1 - Suolaa 
 Tehtävän h1 raportti.
 ## Nettisivun luominen Githubilla - tiivistelmä
 Karvinen 2023: https://terokarvinen.com/2023/create-a-web-page-using-github/
