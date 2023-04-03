@@ -84,7 +84,7 @@ Käskin t001-koneen kertomaan komennolla: **sudo salt 't001' state.single cdm.ru
 
 <img width="292" alt="image" src="https://user-images.githubusercontent.com/101214286/229480783-0ad1899e-7c0b-4ff1-9b36-130b8857542d.png">
 
-##Infra koodina
+## Infra koodina
 
 Luon tiedoston, johon kirjoitan koodia, jonka haluan orjien suorittavan masterin käskiessä. Loin hakemiston **sudo mkdir -p /srv/salt/hello**, johon loin tiedoston komennolla **sudoedit /srv/salt/hello/init.sls**. Se näyttää tältä:
 
