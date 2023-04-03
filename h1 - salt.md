@@ -87,7 +87,11 @@ Käskin t001-koneen kertomaan komennolla: **sudo salt 't001' state.single cdm.ru
 
 ##Infra koodina
 
-Luon tiedoston, johon kirjoitan koodia, jonka haluan orjien suorittavan masterin käskiessä. Loin hakemiston näin: **sudo mkdir -p /srv/salt/hello**. Ja Hakemistoon loin tiedoston komennolla **sudoedit /srv/salt/hello/init.sls**, joka näyttää tältä:
+Luon tiedoston, johon kirjoitan koodia, jonka haluan orjien suorittavan masterin käskiessä. Loin hakemiston näin: **sudo mkdir -p /srv/salt/hello**. Siirryin hakemistoon ja loin tiedoston komennolla **sudoedit init.sls**, joka näyttää tältä:
+
+kuva
+
+Tässä lopputulos kun ajan koodin **sudo salt '*' state.apply hello**:
 
 ## Lähteet kaikkiin tehtäväkohtiin 
 Näistä sain apuja ja neuvoja tehtäviin.
