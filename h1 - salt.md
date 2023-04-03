@@ -30,7 +30,7 @@ Käytössäni on läppäri, jossa Windows 11 sekä kaikki tarpeelliset päivityk
 
 Ensimmäisenä asensin Vagrantin koneelleni ohjeessa annetusta linkistä ja käynnistin tietokoneeni sen jälkeen uudestaan. Sen jälkeen avasin tietokoneellani PowerShellin adminina ja suoritin seuraavat komennot: 
 
-**Vagrant init debian/bullseye64** asentaakseni Debian 11
+**Vagrant init debian/bullseye64** asentaakseni Debian 11 haluamaani tiedostosijaintiin (/user/vagrant/debian)
 
 <img width="270" alt="image" src="https://user-images.githubusercontent.com/101214286/229461896-742e5435-9838-4dce-9842-821ddd17a0ac.png">
 
@@ -44,7 +44,17 @@ Ensimmäisenä asensin Vagrantin koneelleni ohjeessa annetusta linkistä ja käy
 
 ## 3 koneen verkon asennus
 
+Loin tätä tehtäväkohtaa varten oman kansion /users/vagrant/saltdemo. Ja lisäsin init-tiedoston tähänkin kansioon. Kopioin sinne ready-made-tekstin. Käynnistin sen jälkeen virtuaalikoneet komennolla **vagrant up**.
 
-Lähteet kaikkiin tehtäväkohtiin
+## Orjien hyväksyminen
+
+Kirjauduin komennolla **vagrant ssh tmaster** ns. isäntäkoneelle, jolla hyväksyn orjat. Hyväksyin siis orjat komennolla **sudo salt-key -A** ja testasin yhteyden ajamalla komennon **sudo salt '*' test.ping**.
+
+<img width="182" alt="image" src="https://user-images.githubusercontent.com/101214286/229476421-5cef4298-c744-4f63-bd2a-45c80169dfce.png">
+
+
+
+## Lähteet kaikkiin tehtäväkohtiin 
+Näistä sain apuja ja neuvoja tehtäviin.
 Karvinen 2023: https://terokarvinen.com/2023/palvelinten-hallinta-2023-kevat/ 
 https://tuomasvalkamo.com/CMS-course/week-6/
