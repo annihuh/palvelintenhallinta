@@ -42,7 +42,7 @@ Sen jälkeen menin muokkaamaan kyseistä tiedostoa näin:
 
     sudo nano sshd_config
     
-Kopioin sisällön config-tiedostoon täältä: https://terokarvinen.com/2018/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=salt%20ssh. Lopputulos näytti tältä:
+Kopioin sisällön config-tiedostoon täältä: https://terokarvinen.com/2018/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=salt%20ssh, mutta vaihdoin 8888-portin sijalle portit 21 ja 22. Lopputulos näytti tältä:
 
 <img width="autp" alt="image" src="https://user-images.githubusercontent.com/101214286/230645305-462edfa8-0ec9-48a1-987a-6a063863872d.png">
 
