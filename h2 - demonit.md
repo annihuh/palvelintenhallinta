@@ -44,9 +44,9 @@ Sen jälkeen menin muokkaamaan kyseistä tiedostoa näin:
     
 Kopioin sisällön config-tiedostoon täältä: https://terokarvinen.com/2018/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=salt%20ssh. Lopputulos näytti tältä:
 
-<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/230639487-bdb3594f-b10d-46ba-bd67-271e1b916b9f.png">
+<img width="autp" alt="image" src="https://user-images.githubusercontent.com/101214286/230645305-462edfa8-0ec9-48a1-987a-6a063863872d.png">
 
-Unohdin lisätä portin 22, joten menin vielä takaisin lisäämään sen esimerkissä olevan portin 8888 alapuolelle. Sen jälkeen käynnistin uudelleen SSH-palvelimen. 
+Tämän jälkeen käynnistin uudelleen SSH-palvelimen. 
 
     sudo systemctl restart sshd
 
