@@ -18,7 +18,15 @@ Päivitin koneen.
 
 Seuraavaksi asensin serverin t001:lle.
 
-    sudo apt-get install openssh server
+    sudo apt-get install openssh-server
+
+Tarkistin asennuksen komennolla... ja lopputulos
+
+    whereis openssh
+    
+    openssh: /usr/lib/openssh /usr/share/openssh
+
+
 
 ## b) Automatisoiminen
 
