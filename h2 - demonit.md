@@ -2,7 +2,11 @@
 
 ## x) Lue ja tiivistä
 
-hfrghd
+Linkki tiivistettävään tekstiin: https://terokarvinen.com/2018/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=salt%20ssh 
+
+Teksti käsittelee SSH-palvelun automatisointia. Ensimmäisenä käsketään asentamaan master-kone ja orjat. Sen jälkeen ryhdytään luomaan SSH-tilaa ohjeiden mukaisesti. Alussa tehdään sls-tiedosto, johon lisätään tietoa, mitä halutaan orjien tekevän. Sen jälkeen luodaan default sshd_config-tiedoston pohjalta ns. määrittelytiedosto, jossa lukee erinäisiä tietoja esim. protokollasta ja porteista. Siihen siis määritellään oletusasetukset.
+
+Sen jälkeen käsketään testaamaan tilaa orjilla, ohjeissa kerrotaan siihen kaksi erilaista tapaa.
 
 ## a) OpenSSH
 
@@ -24,19 +28,17 @@ Käynnistin palvelimen, että se on varmasti käynnissä
 
     sudo service ssh start
 
-Tarkistin asennuksen komennolla `whereis openssh` ja lopputulos:
-
-    openssh: /usr/lib/openssh /usr/share/openssh
-
-Katsoin vielä ssh:n statuksen ja käynnissä olevat prosessit ajamalla komennot `sudo systemctl status ssh.service` ja `ps aux | grep ssh`.
+Tarkistin ssh:n statuksen ja käynnissä olevat prosessit ajamalla komennot `sudo systemctl status ssh.service` ja `ps aux | grep ssh`. SSH-palvelu on siis käynnissä.
 
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/230623105-c6627b7b-ae0c-4544-8b2a-37091eb38c72.png">
 
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/230622965-8735d8c8-3d89-47d8-89ed-666a117e1bd1.png">
 
+Asennuksen jälkeen siirryin lisäämään toista porttia oletusportin lisäksi. 
+
 
 ## b) Automatisoiminen
-
+  
 gsdd
 
 ## c) Toinen asetus SSH-palveluun
