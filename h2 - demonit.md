@@ -9,11 +9,12 @@ hfrghd
 Aloitin harjoituksen luomalla uudestaan masterin ja orjat edellisen tehtävän mukaisesti. Sen jälkeen menin t001-koneelle tekemään manuaalisesti OpenSSH:n asennusta.
 
 Menin t001 koneelle ssh yhteydellä.
+
 `vagrant ssh t001`
 
 Päivitin koneen.
 
-```sudo apt-get update && upgrade```
+`sudo apt-get update && upgrade`
 
 
 
