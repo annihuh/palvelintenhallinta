@@ -1,23 +1,24 @@
 # Demonit
 
-dgsgsg
-
 ## x) Lue ja tiivistä
 
 hfrghd
 
-## OpenSSH ja portti
+## a) OpenSSH ja portti
 
-z<rfgfdg
+Aloitin harjoituksen luomalla uudestaan masterin ja orjat edellisen tehtävän mukaisesti. Sen jälkeen menin t001-koneelle tekemään manuaalisesti OpenSSH:n asennusta.
+'''kjdhaszkjd
 
-## Automatisoi
+## b) Automatisoi
 
 gsdd
 
-## Toinen asetus SSH-palveluun ja testi
+## c) Toinen asetus SSH-palveluun ja testi
 
 gsgfsdg
 
-## Säädä toista demonia Saltilla
+## d) Säädä toista demonia Saltilla
 
-Vapaaehtoinen.
+hgl
+
+## Lähteet
