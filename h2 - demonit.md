@@ -50,7 +50,7 @@ Unohdin lisätä portin 22, joten menin vielä takaisin lisäämään sen esimer
 
     sudo systemctl restart sshd
 
-Tämän jälkeen menin testaamaan toimiiko configuraationi
+Tämän jälkeen testasin toimiiko configuraationi. 
 
 ## b) Automatisoiminen
   
@@ -65,3 +65,6 @@ gsgfsdg
 hgl
 
 ## Lähteet
+
+https://www.simplified.guide/ssh/run-multiple-ports
+
