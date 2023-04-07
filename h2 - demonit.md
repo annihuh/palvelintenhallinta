@@ -19,11 +19,20 @@ Päivitin koneen.
 Seuraavaksi asensin serverin t001:lle.
 
     sudo apt-get install openssh-server
+    
+Käynnistin palvelimen, että se on varmasti käynnissä
 
-Tarkistin asennuksen komennolla `whereis openssh` ja lopputulos
+    sudo service ssh start
+
+Tarkistin asennuksen komennolla `whereis openssh` ja lopputulos:
 
     openssh: /usr/lib/openssh /usr/share/openssh
 
+Katsoin vielä ssh:n statuksen ja käynnissä olevat prosessit ajamalla komennot `sudo systemctl status ssh.service` ja `ps aux | grep ssh`.
+
+<img width="445" alt="image" src="https://user-images.githubusercontent.com/101214286/230623105-c6627b7b-ae0c-4544-8b2a-37091eb38c72.png">
+
+<img width="632" alt="image" src="https://user-images.githubusercontent.com/101214286/230622965-8735d8c8-3d89-47d8-89ed-666a117e1bd1.png">
 
 
 ## b) Automatisoiminen
