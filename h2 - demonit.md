@@ -50,7 +50,7 @@ Tämän jälkeen käynnistin uudelleen SSH-palvelimen.
 
     sudo systemctl restart sshd
 
-Tämän jälkeen testasin toimiiko configuraationi. 
+Tämän jälkeen testasin toimiiko konfiguraationi. Ajoin komennon `ssh -p 21 localhost`, jonka jälkeen kysyttiin salasanaa
 
 ## b) Automatisoiminen
   
