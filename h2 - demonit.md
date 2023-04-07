@@ -12,7 +12,7 @@ Menin t001 koneelle ssh yhteydellä.
 `vagrant ssh t001`
 
 Päivitin koneen.
-`sudo apt-get update && upgrade`
+```sudo apt-get update && upgrade```
 
 
 
