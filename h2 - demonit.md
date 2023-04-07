@@ -14,9 +14,11 @@ Menin t001 koneelle ssh yhteydellä.
 
 Päivitin koneen.
 
-`sudo apt-get update && upgrade`
+    sudo apt-get update && upgrade
 
+Seuraavaksi asensin serverin t001:lle.
 
+    sudo apt-get install openssh server
 
 ## b) Automatisoiminen
 
