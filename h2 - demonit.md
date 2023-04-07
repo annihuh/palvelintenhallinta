@@ -10,6 +10,7 @@ Aloitin harjoituksen luomalla uudestaan masterin ja orjat edellisen tehtävän m
 
 Menin t001 koneelle ssh yhteydellä.
 
+
 `vagrant ssh t001`
 
 Päivitin koneen.
