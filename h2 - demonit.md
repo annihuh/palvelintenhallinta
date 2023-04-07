@@ -23,7 +23,7 @@ Päivitin koneen.
 
 gsdd
 
-## c) Toinen asetus SSH-palveluun ja testi
+## c) Toinen asetus SSH-palveluun
 
 gsgfsdg
 
