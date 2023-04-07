@@ -7,7 +7,7 @@ hfrghd
 ## a) OpenSSH ja portti
 
 Aloitin harjoituksen luomalla uudestaan masterin ja orjat edellisen tehtävän mukaisesti. Sen jälkeen menin t001-koneelle tekemään manuaalisesti OpenSSH:n asennusta.
-'''kjdhaszkjd
+`jdaskd`
 
 ## b) Automatisoi
 
