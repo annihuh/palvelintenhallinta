@@ -20,10 +20,8 @@ Seuraavaksi asensin serverin t001:lle.
 
     sudo apt-get install openssh-server
 
-Tarkistin asennuksen komennolla... ja lopputulos
+Tarkistin asennuksen komennolla `whereis openssh` ja lopputulos
 
-    whereis openssh
-    
     openssh: /usr/lib/openssh /usr/share/openssh
 
 
