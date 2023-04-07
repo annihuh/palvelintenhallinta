@@ -4,7 +4,7 @@
 
 hfrghd
 
-## a) OpenSSH ja portti
+## a) OpenSSH
 
 Aloitin harjoituksen luomalla uudestaan masterin ja orjat edellisen tehtävän mukaisesti. Sen jälkeen menin t001-koneelle tekemään manuaalisesti OpenSSH:n asennusta.
 
@@ -19,7 +19,7 @@ Päivitin koneen.
 
 
 
-## b) Automatisoi
+## b) Automatisoiminen
 
 gsdd
 
@@ -27,7 +27,7 @@ gsdd
 
 gsgfsdg
 
-## d) Säädä toista demonia Saltilla
+## d) Demonin säätäminen saltilla
 
 hgl
 
