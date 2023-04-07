@@ -34,8 +34,23 @@ Tarkistin ssh:n statuksen ja käynnissä olevat prosessit ajamalla komennot `sud
 
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/230622965-8735d8c8-3d89-47d8-89ed-666a117e1bd1.png">
 
-Asennuksen jälkeen siirryin lisäämään toista porttia oletusportin lisäksi. 
+Asennuksen jälkeen siirryin lisäämään toista porttia oletusportin lisäksi. Siirryin komennolla `cd /etc/ssh` em. sijaintiin. Tein varmuuden vuoksi kopion sshd_config tiedostosta komennolla:
 
+    sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config_backup
+
+Sen jälkeen menin muokkaamaan kyseistä tiedostoa näin:
+
+    sudo nano sshd_config
+    
+Kopioin sisällön config-tiedostoon täältä: https://terokarvinen.com/2018/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=salt%20ssh. Lopputulos näytti tältä:
+
+<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/230639487-bdb3594f-b10d-46ba-bd67-271e1b916b9f.png">
+
+Unohdin lisätä portin 22, joten menin vielä takaisin lisäämään sen esimerkissä olevan portin 8888 alapuolelle. Sen jälkeen käynnistin uudelleen SSH-palvelimen. 
+
+    sudo systemctl restart sshd
+
+Tämän jälkeen menin testaamaan toimiiko configuraationi
 
 ## b) Automatisoiminen
   
