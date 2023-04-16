@@ -37,6 +37,8 @@ Komento ei kuitenkaan heti mennyt oletetusti - että olisin päässyt tekemään
 
 ## c) Doh!
 
-Tässä vaiheessa aloin tekemään muokkausta, jonka peruutan edelliseen versioon 
+Tässä vaiheessa aloin tekemään muokkausta, jonka peruutan edelliseen versioon `git reset --hard` avulla. Tein muokkauksen README.md tiedostoon ja tallensin sen. Sen jälkeen ajoin reset-komennon, joka palautti kaiken ensimmäiseen edittiin.
+
+<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/232319242-9b28025a-f6ca-40ef-9e49-72f982ec0cdb.png">
 
 ## d) Tukki
