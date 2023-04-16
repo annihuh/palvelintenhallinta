@@ -27,7 +27,11 @@ Sen jälkeen menin kokeilemaan uudestaan `git clone` komentoa, joka onnistui.
 
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/232290459-2841abad-7a53-45c3-be72-061b13b5eab9.png">
 
-Siirryin summeriscoming-kansioon cd-komennolla. Ajoin `git pull` komennon saadakseni viimeisimmät tallennukset reposta ja sain ilmoituksen, . 
+Siirryin summeriscoming-kansioon cd-komennolla ja ajoin `git pull` komennon saadakseni viimeisimmät tallennukset reposta. Aloin muokkaamaan README.md tiedostoa komennolla `nano README.md`, kirjoitin tekstiä ja tallensin tiedoston. Sen jälkeen ajoin komennon:
+
+    git add . && git commit; git pull && git push
+    
+Git add tallentaa muutokset välimuistiin, commit tekee ns. virallisen ja pysyvän talletuksen, pull tuo esim. muiden tekemät muutokset ja push lähettää itse tekemäni muutokset eteenpäin.
 
 ## c) Doh!
 
