@@ -14,7 +14,14 @@ Ensimmäisenä asensin git:n koneelleni komennolla `sudo apt-get install git`. S
 
     git clone git@github.com:annihuh/summeriscoming.git
     
-Komento ei kuitenkaan heti mennyt läpi, koska "hostin" turvallisuutta ei voida taata. Siis seuraavaksi minun piti mennä lisäämään Github ns. hyväksytyksi. Ajoin komennon `ssh-keygen` uuden avainparin luomiseksi. Sen jälkeen siirryin 
+Komento ei kuitenkaan heti mennyt läpi, koska "hostin" turvallisuutta ei voida taata. Siis seuraavaksi minun piti mennä lisäämään Github ns. hyväksytyksi. Ajoin komennon `ssh-keygen` uuden avainparin luomiseksi. Sen jälkeen siirryin .ssh kansioon ja kopioin julkisen avaimen, jonka liitän Githubiin uutena ssh-avaimena. 
+
+    cd .ssh
+    cat id_rsa.pub
+
+Kopioituani avaimen liitin sen Githubissa uudeksi ssh-avaimeksi. 
+
+<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/232290281-d5a5a638-27ad-4562-aebc-0bfc2dd8c60c.png">
 
 ## c) Doh!
 
