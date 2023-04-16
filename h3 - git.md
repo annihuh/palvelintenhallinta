@@ -19,9 +19,15 @@ Komento ei kuitenkaan heti mennyt läpi, koska "hostin" turvallisuutta ei voida 
     cd .ssh
     cat id_rsa.pub
 
-Kopioituani avaimen liitin sen Githubissa uudeksi ssh-avaimeksi. 
+Kopioituani avaimen liitin sen Githubissa uudeksi ssh-avaimeksi ja tallensin. 
 
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/232290281-d5a5a638-27ad-4562-aebc-0bfc2dd8c60c.png">
+
+Sen jälkeen menin kokeilemaan uudestaan `git clone` komentoa, joka onnistui. 
+
+<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/232290459-2841abad-7a53-45c3-be72-061b13b5eab9.png">
+
+Siirryin summeriscoming-kansioon cd-komennolla. Ajoin `git pull` komennon saadakseni viimeisimmät tallennukset reposta ja sain ilmoituksen, . 
 
 ## c) Doh!
 
