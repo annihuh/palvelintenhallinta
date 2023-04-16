@@ -31,7 +31,9 @@ Siirryin summeriscoming-kansioon cd-komennolla ja ajoin `git pull` komennon saad
 
     git add . && git commit; git pull && git push
     
-Git add tallentaa muutokset välimuistiin, commit tekee ns. virallisen ja pysyvän talletuksen, pull tuo esim. muiden tekemät muutokset ja push lähettää itse tekemäni muutokset eteenpäin.
+Git add tallentaa muutokset välimuistiin, commit tekee pysyvän talletuksen, pull tuo esim. muiden juuri tekemät muutokset ja push lähettää itse tekemäni muutokset eteenpäin. Komento ei kuitenkaan heti mennyt oletetusti - että olisin päässyt tekemään muokkaukselle kuvauksen - joten ilmoituksen mukaisesti muutin käyttäjänimeni komennolla `git config --global user.name "annihuh"`. Tämän jälkeen kun ajoin edellisen komennon muokkaus tallentui miin kuin kuuluikin. Kuva selaimesta:
+
+<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/232316384-a3e52cad-a674-4616-bbed-7866039c491f.png">
 
 ## c) Doh!
 
