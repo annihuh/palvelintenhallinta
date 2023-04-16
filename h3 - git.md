@@ -48,3 +48,7 @@ Kuva selitettävästä patch-tiedostosta.
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/232319592-b1225148-8a6e-4f92-a6bf-cfe68c761e03.png">
 
 Patch historia kertoo milloin muutoksia on tehty, mihin ja kuka niitä on tehnyt. Jokainen muokkaus näkyy erikseen: punainen tarkoittaa muokattua tai postettua ja vihreä on lisäyksen merkki. Muutosten yläpuolella kerrotaan myös, mitä commit-viestiin on kirjoitettu. Näiden alapuolella on pitkä vihreä teksti, jossa kerrotaan GNU-lisenssistä.
+
+## Lähteet
+
+Karvinen, Tero. s.a. Infra as Code course. Luettavissa: https://terokarvinen.com/2023/palvelinten-hallinta-2023-kevat/#h3-git Luettu: 16.4.2023
