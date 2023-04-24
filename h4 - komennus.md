@@ -1,10 +1,10 @@
 # Komennus
 ## Rauta ja versiot
-    Suoritin: Intel(R) Core(TM) i3-8130U CPU @ 2.20GHz 2.21 GHz
+    CPU: Intel(R) Core(TM) i3-8130U CPU @ 2.20GHz 2.21 GHz
     RAM: 8,00 Gt
     Järjestelmätyyppi: 64-bittinen käyttöjärjestelmä
     Windows-versio: Windows 11
-    Vagrant: 2.3.4
+    Vagrant-versio: 2.3.4
     
 ## Hello.sh
 Aloitin tehtävän luomalla skriptin komennolla `nano shine.sh`. Menin editoriin muokkaamaan tiedostoa ja lopputulos oli tämä:
@@ -49,25 +49,27 @@ Kopioin molemmat skriptit commands kansioon:
     sudo cp shine.sh /srv/salt/commands
     sudo cp summer.py /srv/salt/commands
 
-Siirryin kansioon, tarkastin ls-komennolla, että skriptit oli kansiossa jonka jälkeen loin uuden sun.sls tiedoston:
-
-    cd /srv/salt/commands
-    sudoedit sun.sls
-
-Tiedoston sisältö:
+Siirryin kansioon `cd /srv/salt/commands`-komennolla sekä tarkastin `ls`-komennolla, että skriptit ovat kansiossa. Tämän jälkeen loin uuden init.sls tiedoston `sudoedit init.sls`. Tiedoston sisältö:
 
     bash:
-      file.managed
-        - name: /usr/local/bin/
+      file.managed:
+        - name: /usr/local/bin/shine.sh
         - source: salt://commands/shine.sh
-        - mode: 755
+        - mode: 0755
 
     python:
-      file.managed
-        - name: /usr/local/bin/
+      file.managed:
+        - name: /usr/local/bin/summer.py
         - source: salt://commands/summer.py
-        - mode: 755
+        - mode: 0755
 
-Sen jälkeen testasin saltilla onnistuuko skriptin ajaminen. Käytin komentoa `sudo salt 't001' state.apply sun.sls`.
+Loin molemmille skripteille oman tilan eli `file.managed` komenot luo uuden tiedoston orjakoneelle. Name kertoo, mihin sijaintiin orjalla kyseinen skripti asentuu, source kertoo mistä kopioidaan ja mode muokkaa oikeudet niin, että skriptin ajaminen onnistuu.
+
+Sen jälkeen testasin saltilla onnistuuko skriptin ajaminen. Käytin komentoa `sudo salt 't001' state.apply init.sls`.
+
+
+
+
+
 
 ## Asenna
