@@ -20,7 +20,7 @@ Seuraavaksi kopioin skriptin niin, että skriptin pystyy ajamaan pelkästään k
 
 Sen jälkeen kokeilin ajaa komennon kirjoittamalla pelkästään `shine.sh` ja skriptin suorittaminen onnistui. Testasin sen jälkeen vielä toisessa hakemistossa /etc. Ajaminen onnistui sielläkin.
 
-<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233925272-302eb2da-7265-46e3-ae2a-ded0317340e4.png">
+<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233925491-2f3913d1-5647-4b0e-ad87-e006948e5847.png">
 
 ## Hello.py
 ## Automatisoi saltilla
