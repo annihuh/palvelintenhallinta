@@ -72,3 +72,4 @@ Testasin vielä t001-koneella skriptin ajamisen, se onnistui odotetusti.
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233965215-cc320537-5bb1-4ece-812b-55f502239a67.png">
 
 ## d) Asenna
+
