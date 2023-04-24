@@ -28,14 +28,14 @@ Tässä kohdassa teen saman kuin edellisessä, mutta skripti on pythonilla ajett
     #! /usr/bin/python3
     print ("today is sunny")
 
-Skripti tekee siis täysin saman kuin bash:lla eli python tulostaa tekstin "today is sunny" print komennon avulla. Sen jälkeen tein samat komennot kuin edellisessäkin tehtävässä. Eli vaihdoin suoritusoikeudet, testasin skriptin kotihakemistossani, kopioin yhteiseen hakemistosijaintiin ja testasin uudelleen kahdessa eri hakemistossa.
+Skripti tekee siis täysin saman kuin bash:lla eli python tulostaa tekstin "today is sunny" print komennon avulla. Sen jälkeen tein samat komennot kuin edellisessäkin tehtävässä. Eli vaihdoin suoritusoikeudet, testasin skriptin kotihakemistossani, kopioin skriptin yhteiseen hakemistosijaintiin ja testasin skriptin toimivuuden kahdessa eri hakemistossa.
 
-    chmod ugo+x summer.py
-    ./summer.py
-    sudo cp summer.py /usr/local/bin
-    summer.py
+    1. chmod ugo+x summer.py
+    2. ./summer.py
+    3. sudo cp summer.py /usr/local/bin
+    4. summer.py
 
-Skripti toimi molemmissa hakemistoissa.
+Lopputestaus kahdessa eri hakemistossa:
 
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233931967-facbd095-8245-4559-b92c-c1a2292274c9.png">
 
