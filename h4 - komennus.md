@@ -6,7 +6,7 @@
     Windows-versio: Windows 11
     Vagrant-versio: 2.3.4
     
-## Hello.sh
+## a) Hello.sh
 Aloitin tehtävän luomalla skriptin komennolla `nano shine.sh`. Menin editoriin muokkaamaan tiedostoa ja lopputulos oli tämä:
     
     #! /usr/bin/bash
@@ -22,7 +22,7 @@ Sen jälkeen kokeilin ajaa komennon kirjoittamalla pelkästään `shine.sh` ja s
 
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233925491-2f3913d1-5647-4b0e-ad87-e006948e5847.png">
 
-## Hello.py
+## b) Hello.py
 Tässä kohdassa teen saman kuin edellisessä, mutta skripti on pythonilla ajettava. Loin siis skriptin komennolla `nano summer.py` ja lisäsin tiedostoon seuraavat tiedot:
 
     #! /usr/bin/python3
@@ -39,7 +39,7 @@ Lopputestaus kahdessa eri hakemistossa:
 
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233931967-facbd095-8245-4559-b92c-c1a2292274c9.png">
 
-## Automatisoi saltilla
+## c) Automatisoi saltilla
 Aloitin tehtävän tekemällä perinteiset alkutoimet, jonka jälkeen ryhdyin tekemään skriptin automatisointia. Loin uuden kansion:
 
     sudo mkdir -p /srv/salt/commands
@@ -69,4 +69,4 @@ Loin molemmille skripteille oman tilan eli `file.managed` komenot luo uuden tied
 
 
 
-## Asenna
+## d) Asenna
