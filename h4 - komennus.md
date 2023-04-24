@@ -73,5 +73,18 @@ Testasin vielä t001-koneella skriptin ajamisen, se onnistui odotetusti.
 
 ## d) Asenna
 
-Tässä kohdassa ryhdyin asentamaan yhden binäärin ohjelmaa microa orjille Saltilla. Aloitin sillä, että loin uuden kansion `/srv/salt/install` ja sen sisälle `init.sls` tiedoston. Tänne siirrän micron, kun asennettuani sen ensin kotihakemistooni. Asensin micron githubista:
+Tässä kohdassa ryhdyin asentamaan yhden binäärin ohjelmaa microa orjille Saltilla. Asensin micron githubista:
+    
     wget https://github.com/zyedidia/micro/releases/download/v2.0.11/micro-2.0.11-linux64-static.tar.gz
+
+Seuraavaksi purin micron:
+
+    tar -xf micro-2.0.11-linux64-static.tar.gz
+
+Kansion sisältö:
+
+    LICENSE  LICENSE-THIRD-PARTY  README.md  micro  micro.1  micro.desktop  micro.svg
+
+Tämän jälkeen kopioin
+
+## Lähteet
