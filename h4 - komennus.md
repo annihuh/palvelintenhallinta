@@ -81,7 +81,7 @@ Seuraavaksi purin micron:
 
     tar -xf micro-2.0.11-linux64-static.tar.gz
 
-Kansion sisältö:
+`micro-2.0.11` kansion sisältö:
 
     LICENSE  LICENSE-THIRD-PARTY  README.md  micro  micro.1  micro.desktop  micro.svg
 
