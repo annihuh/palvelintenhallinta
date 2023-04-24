@@ -40,4 +40,5 @@ Lopputestaus kahdessa eri hakemistossa:
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233931967-facbd095-8245-4559-b92c-c1a2292274c9.png">
 
 ## Automatisoi saltilla
+
 ## Asenna
