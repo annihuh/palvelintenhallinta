@@ -101,6 +101,10 @@ Tallensin tiedoston ja ajoin komennon `sudo salt 't001' state.apply commands`, j
 
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233990064-1adb08c7-0d3a-42b6-96d9-ad25af381cad.png">
 
-Menin vielä testaamaan microa t001:lle.
+Menin vielä testaamaan microa t001:lle. Kokeilin ensin komennolla `whereis micro` ja tulos oli tämä:
+
+    micro: /usr/local/bin/micro
+    
+Testasin tämän jälkeen vielä tehdä tiedoston microa käyttämällä ja se onnistui odotetusti.
 
 ## Lähteet
