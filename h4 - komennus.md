@@ -23,12 +23,12 @@ Sen jälkeen kokeilin ajaa komennon kirjoittamalla pelkästään `shine.sh` ja s
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233925491-2f3913d1-5647-4b0e-ad87-e006948e5847.png">
 
 ## Hello.py
-Tässä kohdassa teen saman kuin edellisessä, mutta skripti on pythonilla ajettava. Loin siis skriptin taas komennolla `nano summer.py` ja lisäsin tiedostoon seuraavat tiedot:
+Tässä kohdassa teen saman kuin edellisessä, mutta skripti on pythonilla ajettava. Loin siis skriptin komennolla `nano summer.py` ja lisäsin tiedostoon seuraavat tiedot:
 
     #! /usr/bin/python3
     print ("today is sunny")
 
-Skripti tekee siis täysin saman kuin bash:lla eli python tulostaa tekstin "i work with python" print komennon avulla. Sen jälkeen tein samat komennot kuin edellisessäkin tehtävässä. Eli vaihdoin suoritusoikeudet, testasin skriptin kotihakemistossani, kopioin yhteiseen hakemistosijaintiin ja testasin uudelleen kahdessa eri hakemistossa.
+Skripti tekee siis täysin saman kuin bash:lla eli python tulostaa tekstin "today is sunny" print komennon avulla. Sen jälkeen tein samat komennot kuin edellisessäkin tehtävässä. Eli vaihdoin suoritusoikeudet, testasin skriptin kotihakemistossani, kopioin yhteiseen hakemistosijaintiin ja testasin uudelleen kahdessa eri hakemistossa.
 
     chmod ugo+x summer.py
     ./summer.py
