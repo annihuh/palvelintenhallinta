@@ -63,11 +63,11 @@ Siirryin kansioon `cd /srv/salt/commands`-komennolla sekä tarkastin `ls`-komenn
         - source: salt://commands/summer.py
         - mode: 0755
 
-Loin molemmille skripteille oman tilan eli `file.managed` komenot luo uuden tiedoston orjakoneelle. Name kertoo, mihin sijaintiin orjalla kyseinen skripti asentuu, source kertoo mistä kopioidaan ja mode muokkaa oikeudet niin, että skriptin ajaminen onnistuu. en jälkeen testasin saltilla onnistuuko skriptin ajaminen. Käytin komentoa `sudo salt 't001' state.apply commands`.
+Loin molemmille skripteille oman tilan eli `file.managed` komenot luo uuden tiedoston orjakoneelle. Name kertoo, mihin sijaintiin orjalla kyseinen skripti asentuu, source kertoo mistä kopioidaan ja mode muokkaa oikeudet niin, että skriptin ajaminen onnistuu. Sen jälkeen testasin saltilla toimiiko tila t001-koneella: `sudo salt 't001' state.apply commands`. Tämä onnistui ja ajoin saman myös t002:lle.
 
-<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233964490-cb74341f-e1aa-4812-a329-344d11db740e.png">
+<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233966046-205c5e5d-329b-4e8b-aa00-d51e96a42f8f.png">
 
-Testasin vielä t001-koneella skriptin ajamisen. Se onnistui odotetusti.
+Testasin vielä t001-koneella skriptin ajamisen, se onnistui odotetusti.
 
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233965215-cc320537-5bb1-4ece-812b-55f502239a67.png">
 
