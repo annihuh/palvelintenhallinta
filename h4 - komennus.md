@@ -14,11 +14,11 @@ Aloitin tehtävän luomalla skriptin komennolla `nano shine.sh`. Menin editoriin
 
 Skripti siis toistaa sanan shine terminaaliin käyttäen bash-kieltä. Luomisen jälkeen minun piti mennä muokkaamaan oikeuksia, että pääsen ajamaan kyseisen tiedoston. Annoin kaikille oikeudet ajaa tiedoston komennolla `chmod ugo+x shine.sh`. Kokeilin skriptin ajamista tmasterilla käyttäen komentoa `./shine.sh`, komento tulosti viestin shine.
 
-Seuraavaksi kopioin skriptin niin, että skriptin pystyy ajamaan pelkästään komennolla `shine.sh` missä tahansa hakemistossa. Siis kopioin tiedoston näin:
+Seuraavaksi kopioin skriptin niin, että skriptin pystyy ajamaan pelkästään komennolla `shine.sh` missä tahansa hakemistossa. Kopioin sen polkuun `/usr/local/bin/`, koska kyseisessä sijainnissa on ohjelmia, joita peruskäyttäjä voi käyttää. Näin kopioin skriptin:
     
     sudo cp shine.sh /usr/local/bin/
 
-Sen jälkeen kokeilin ajaa komennon kirjoittamalla pelkästään `shine.sh` ja skriptin suorittaminen onnistui. Testasin sen jälkeen vielä toisessa hakemistossa /etc. Ajaminen onnistui sielläkin.
+Sen jälkeen kokeilin ajaa komennon kirjoittamalla pelkästään `shine.sh` ja skriptin suorittaminen onnistui. Testasin sen jälkeen vielä toisessa /etc-hakemistossa. Ajaminen onnistui sielläkin.
 
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233925491-2f3913d1-5647-4b0e-ad87-e006948e5847.png">
 
