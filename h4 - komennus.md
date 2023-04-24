@@ -40,5 +40,24 @@ Lopputestaus kahdessa eri hakemistossa:
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233931967-facbd095-8245-4559-b92c-c1a2292274c9.png">
 
 ## Automatisoi saltilla
+Aloitin tehtävän tekemällä perinteiset alkutoimet, jonka jälkeen ryhdyin tekemään skriptin automatisointia. Loin uuden kansion:
+
+    sudo mkdir -p /srv/salt/commands
+
+Kopioin molemmat skriptit commands kansioon:
+
+    sudo cp shine.sh /srv/salt/commands
+    sudo cp summer.py /srv/salt/commands
+
+Siirryin kansioon, tarkastin ls-komennolla, että skriptit oli kansiossa jonka jälkeen loin uuden sun.sls tiedoston:
+
+    cd /srv/salt/commands
+    sudoedit sun.sls
+
+Tiedoston sisältö:
+
+    sdlfbsdfhfd
+
+Sen jälkeen testasin saltilla onnistuuko skriptin ajaminen. Käytin komentoa `sudo salt 't001' state.apply sun.sls`.
 
 ## Asenna
