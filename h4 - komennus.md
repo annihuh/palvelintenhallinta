@@ -77,7 +77,7 @@ Tässä kohdassa ryhdyin asentamaan yhden binäärin ohjelmaa microa orjille Sal
     
     wget https://github.com/zyedidia/micro/releases/download/v2.0.11/micro-2.0.11-linux64-static.tar.gz
 
-Seuraavaksi purin micron:
+Seuraavaksi purin latauksen:
 
     tar -xf micro-2.0.11-linux64-static.tar.gz
 
