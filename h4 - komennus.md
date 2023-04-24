@@ -67,6 +67,8 @@ Loin molemmille skripteille oman tilan eli `file.managed` komenot luo uuden tied
 
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233964490-cb74341f-e1aa-4812-a329-344d11db740e.png">
 
+Testasin vielä t001-koneella skriptin ajamisen. Se onnistui odotetusti.
 
+<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233965215-cc320537-5bb1-4ece-812b-55f502239a67.png">
 
 ## d) Asenna
