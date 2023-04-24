@@ -1,8 +1,7 @@
-# Komennus
+# h4 Komennus
 ## Rauta ja versiot
     CPU: Intel(R) Core(TM) i3-8130U CPU @ 2.20GHz 2.21 GHz
     RAM: 8,00 Gt
-    Järjestelmätyyppi: 64-bittinen käyttöjärjestelmä
     Windows-versio: Windows 11
     Vagrant-versio: 2.3.4
     
@@ -73,7 +72,7 @@ Testasin vielä t001-koneella skriptin ajamisen, se onnistui odotetusti.
 
 ## d) Asenna
 
-Tässä kohdassa ryhdyin asentamaan yhden binäärin ohjelmaa microa orjille Saltilla. Asensin micron githubista:
+Tässä kohdassa ryhdyin asentamaan yhden binäärin ohjelmaa microa orjille Saltilla. Asensin micron Githubista:
     
     wget https://github.com/zyedidia/micro/releases/download/v2.0.11/micro-2.0.11-linux64-static.tar.gz
 
@@ -106,5 +105,3 @@ Menin vielä testaamaan microa t001:lle. Kokeilin ensin komennolla `whereis micr
     micro: /usr/local/bin/micro
     
 Testasin tämän jälkeen vielä tehdä tiedoston microa käyttämällä ja se onnistui odotetusti.
-
-## Lähteet
