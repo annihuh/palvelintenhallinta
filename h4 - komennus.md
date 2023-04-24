@@ -85,6 +85,22 @@ Seuraavaksi purin micron:
 
     LICENSE  LICENSE-THIRD-PARTY  README.md  micro  micro.1  micro.desktop  micro.svg
 
-Tämän jälkeen kopioin
+Tämän jälkeen kopioin micron /srv/salt/commands polkuun.
+
+    sudo cp micro /srv/salt/commands
+
+Jonka jälkeen muokkasin init.sls tiedostoa ja lisäsin sinne microa varten uuden tilan.
+
+    micro:
+      file.managed:
+        - name: /usr/local/bin/micro
+        - source: salt://commands/micro
+        - mode: 0755
+
+Tallensin tiedoston ja ajoin komennon `sudo salt 't001' state.apply commands`, joka toimi niin kuin pitikin.
+
+<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/233990064-1adb08c7-0d3a-42b6-96d9-ad25af381cad.png">
+
+Menin vielä testaamaan microa t001:lle.
 
 ## Lähteet
