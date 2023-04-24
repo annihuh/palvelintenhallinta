@@ -56,7 +56,17 @@ Siirryin kansioon, tarkastin ls-komennolla, että skriptit oli kansiossa jonka j
 
 Tiedoston sisältö:
 
-    sdlfbsdfhfd
+    bash:
+      file.managed
+        - name: /usr/local/bin/
+        - source: salt://commands/shine.sh
+        - mode: 755
+
+    python:
+      file.managed
+        - name: /usr/local/bin/
+        - source: salt://commands/summer.py
+        - mode: 755
 
 Sen jälkeen testasin saltilla onnistuuko skriptin ajaminen. Käytin komentoa `sudo salt 't001' state.apply sun.sls`.
 
