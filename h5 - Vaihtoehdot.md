@@ -9,6 +9,8 @@
 
 ## a) Asenna Salt Windowsille
 
+Aloitin tehtävän asentamalla minion-ohjelman Windowsille osoitteesta https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/windows.html.
+
 ## b) Ei voi kalastaa
 
 ## c) Hei ikkuna
