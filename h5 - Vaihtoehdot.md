@@ -13,9 +13,11 @@ Aloitin tehtävän asentamalla minion-ohjelman Windowsille osoitteesta https://d
 
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/235321366-5387b5b9-e4e0-45a2-8574-e6ea880b370c.png">
 
-Tiedoston ladattua aloitin ohjelman asentamisen. Etenin installerissa finish kohtaan asti suurimmaksi osaksi oletuksilla (vaihdoin minionin nimeksi a003) ja käynnistin ohjelman automaattisesti. Testasin toimiiko salt paikallisesti
+Tiedoston ladattua aloitin ohjelman asentamisen. Etenin installerissa finish kohtaan asti suurimmaksi osaksi oletuksilla (vaihdoin minionin nimeksi a003) ja ohjelma käynnistyi automaattisesti. Salt asennettu.
 
 ## b) Ei voi kalastaa
+
+Tässä kohdassa testaan onnistuuko Saltin käyttö paikallisesti. 
 
 ## c) Hei ikkuna
 
