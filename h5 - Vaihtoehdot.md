@@ -17,7 +17,7 @@ Tiedoston ladattua aloitin ohjelman asentamisen. Setup Wizard pyysi admin-oikeuk
 
 ## b) Ei voi kalastaa
 
-Tässä kohdassa testaan onnistuuko Saltin käyttö paikallisesti. Kopioin ensimmäiseksi tiedoston `Salt-Minion-3006.0-Py3-AMD64.msi` polkuun `C:\Windows\System32` komennolla `Copy-Item .\Salt-Minion-3006.0-Py3-AMD64.msi 'C:\Windows\System32\'`, että voin ajaa komentoja mistä tahansa. Sen jälkeen suoritin komennon `salt-call --local test.ping` ja sain vastaukseksi `local:true`, joka tarkoittaa, että Salt toimii paikallisesti.
+Tässä kohdassa testaan onnistuuko Saltin käyttö paikallisesti. Kopioin ensimmäiseksi lataamani tiedoston `Salt-Minion-3006.0-Py3-AMD64.msi` polkuun `C:\Windows\System32` komennolla `Copy-Item .\Salt-Minion-3006.0-Py3-AMD64.msi 'C:\Windows\System32\'`, että voin ajaa komentoja mistä tahansa. Sen jälkeen suoritin komennon `salt-call --local test.ping` ja sain vastaukseksi `local:true`, joka tarkoittaa, että Salt toimii paikallisesti.
 
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/235344619-15074bd7-e0c7-41a5-89c2-f4555b231e7b.png">
 
