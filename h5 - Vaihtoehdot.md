@@ -25,6 +25,19 @@ Huom. komento toimii siis myös ilman .exe-loppua.
 
 ## c) Hei ikkuna
 
+Ryhdyin luomaan Hei maailma tiedostoa indempotenttina. Kirjoitin alla olevan komennon komentoriville. Se siis loi uuden tiedoston väliaikaistiedostojen kansioon `C:\Windows\Temp`. 
 
+    salt-call --local state.single file.managed 'C:/Windows/Temp/helloworld.bat'
+
+Menin muokaamaan tiedoston sisältöä: `notepad.exe .\helloworld.bat`. Tiedoston sisältö:
+
+    PS C:\Windows\Temp> cat .\helloworld.bat
+    @echo off
+    echo Hello World!
+
+@echo tarkoittaa sitä, että käyttäjä ei näe skriptin suorituksen aikana ajettavia komentoja ja echo Hello World! on se, mitä tulostetaan. Ajoin komennon `.\helloworld.bat` ja tulos oli tämä:
+
+    PS C:\Windows\Temp> .\helloworld.bat
+    Hello World!
 
 ## d) Installed
