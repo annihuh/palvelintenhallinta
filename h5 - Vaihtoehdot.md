@@ -23,4 +23,6 @@ Tässä kohdassa testaan onnistuuko Saltin käyttö paikallisesti. Kopioin ensim
 
 ## c) Hei ikkuna
 
+
+
 ## d) Installed
