@@ -48,4 +48,4 @@ Etsin ohjelman Notepad++:n omilta sivuilta ja valitsin uusimman version. Asensin
 
     Copy-Item .\notepad++.exe 'C:\Windows\System32\'
 
-Tarkistin vielä onnistuiko kopiointi menemällä kohdekansioon. 
+Tarkistin vielä onnistuiko kopiointi menemällä kohdekansioon.
