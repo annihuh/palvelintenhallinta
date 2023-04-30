@@ -43,3 +43,9 @@ Ryhdyin luomaan Hei maailma tiedostoa indempotenttina. Kirjoitin alla olevan kom
 Skirpti toimii!
 
 ## d) Installed
+
+Etsin ohjelman Notepad++:n omilta sivuilta ja valitsin uusimman version. Asensin sen koneelleni. Asennuksen jälkeen kopioin notepad++.exe:n kansioon `C:/Windows/System32/` kansiosta `C:/Program Files/Notepad++/` komennolla:
+
+    Copy-Item .\notepad++.exe 'C:\Windows\System32\'
+
+Tarkistin vielä onnistuiko kopiointi menemällä kohdekansioon. 
