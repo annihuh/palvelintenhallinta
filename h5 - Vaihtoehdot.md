@@ -29,7 +29,7 @@ Ryhdyin luomaan Hei maailma tiedostoa indempotenttina. Kirjoitin alla olevan kom
 
     salt-call --local state.single file.managed 'C:/Windows/Temp/helloworld.bat'
 
-Menin muokaamaan tiedoston sisältöä: `notepad.exe .\helloworld.bat`. Tiedoston sisältö:
+.bat on Windowsissa merkki siitä, että kyseessä on komentotiedosto, jonka voi suorittaa. Menin muokaamaan tiedoston sisältöä: `notepad.exe .\helloworld.bat`. Tiedoston sisältö:
 
     PS C:\Windows\Temp> cat .\helloworld.bat
     @echo off
@@ -39,5 +39,7 @@ Menin muokaamaan tiedoston sisältöä: `notepad.exe .\helloworld.bat`. Tiedosto
 
     PS C:\Windows\Temp> .\helloworld.bat
     Hello World!
+    
+Skirpti toimii!
 
 ## d) Installed
