@@ -9,13 +9,11 @@
 
 ## a) Asenna Salt Windowsille
 
-Aloitin tehtävän asentamalla minion-ohjelman Windowsille osoitteesta https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/windows.html. Valitsin tarjotun tiedoston:
+Aloitin tehtävän asentamalla minion-ohjelman Windowsille osoitteesta https://repo.saltproject.io/salt/py3/windows/latest/. Valitsin kuvassa näkyvän version.
 
-<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/235321366-5387b5b9-e4e0-45a2-8574-e6ea880b370c.png">
+<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/235341355-5be4f53d-a5a2-46cf-8019-95331e8dc2ae.png">
 
-Tiedoston ladattua aloitin ohjelman asentamisen. Etenin installerissa finish kohtaan asti suurimmaksi osaksi oletuksilla (vaihdoin minionin nimeksi a003) ja ohjelma käynnistyi automaattisesti. Salt asennettu.
-
-<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/235339022-7ceac304-b5f3-42bc-8331-13478ea04cfb.png"> 
+Tiedoston ladattua aloitin ohjelman asentamisen. Setup Wizard pyysi admin-oikeuksia pyöriäkseen, joten avasin sen PowerShellissä näin: `PS C:\Users\annij\Downloads> .\Salt-Minion-3006.0-Py3-AMD64.msi`. Etenin installerissa finish kohtaan asti suurimmaksi osaksi oletuksilla (vaihdoin minionin nimeksi a003) ja ohjelma käynnistyi automaattisesti. Salt asennettu.
 
 ## b) Ei voi kalastaa
 
