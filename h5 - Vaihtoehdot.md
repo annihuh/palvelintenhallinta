@@ -5,7 +5,12 @@
     RAM: 8,00 Gt
     Windows-versio: Windows 11
     
-## Lue ja tiivistä
+## x) Lue ja tiivistä
+
+### Control Windows with Salt
+https://terokarvinen.com/2018/control-windows-with-salt/
+
+- 
 
 ## a) Asenna Salt Windowsille
 
