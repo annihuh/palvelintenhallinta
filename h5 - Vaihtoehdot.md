@@ -76,9 +76,10 @@ Latasin ensimmäiseksi micron zip-tiedoston osoitteesta https://github.com/zyedi
 
 Tämän jälkeen loin init.sls tiedoston, jonka sisältö on tämä:
 
-    C:\Users\annij\Downloads\micro-2.0.11-win64\micro-2.0.11\micro.exe:
+    C:\Windows\System32\micro:
       file.managed:
         - source: "salt://state/micro.exe"
+        - makedirs: True
 
 Ylin rivi on se mihin mikro asennetaan, toinen rivi tekee halutulle tiedostolle jotain (kopioidaan paikasta toiseen), kolmas kertoo, mistä kopioidaan. Sen jälkeen ajoin komennon:
 
@@ -101,6 +102,4 @@ Löysin vastauksen tähän tutkimistani raporteista. Eli siis määrittelytiedos
     
 Muutosten jälkeen ajoin tilan `salt-call --local state.apply state` ja sain ilmoituksen, että asennus onnistui. Kokeilin avata init.sls tiedoston microlla `.\micro init.sls`. Micro toimii.
 
-<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/235542189-9dab4258-648b-4ab5-83f9-7ac652201c0b.png">
-
-Nyt jälkeenpäin ajateltuna olisi ehkä kannattanut kopioida micro toiseen paikkaan.
+<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/235543633-66356f06-756f-4c1a-9428-bdb9aef5af41.png">
