@@ -67,3 +67,4 @@ Ryhdyin luomaan Hei maailma tiedostoa indempotenttina. Kirjoitin alla olevan kom
 Skirpti toimii!
 
 ## d) Installed
+
