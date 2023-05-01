@@ -67,12 +67,3 @@ Ryhdyin luomaan Hei maailma tiedostoa indempotenttina. Kirjoitin alla olevan kom
 Skirpti toimii!
 
 ## d) Installed
-
-Loin kansion `C:/Salt/states` ja sinne lisäsin `init.sls` tiedoston. Sen sisältö on tässä:
-
-    Copy notepad++:
-      file.managed:
-        - name: C:/Salt/notepad++.exe
-        - source: C:/Program Files/Notepad++/notepad++.exe
-
-Sen jälkeen kopioin notepad++.exe:n C:/Salt/-kansioon.
