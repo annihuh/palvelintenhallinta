@@ -48,6 +48,7 @@ Loin kansion `C:/Salt/states` ja sinne lisäsin `init.sls` tiedoston. Sen sisäl
 
     Copy notepad++:
       file.managed:
-        - name: C:/Salt/
+        - name: C:/Salt/notepad++.exe
         - source: C:/Program Files/Notepad++/notepad++.exe
 
+Sen jälkeen kopioin notepad++.exe:n C:/Salt/-kansioon.
