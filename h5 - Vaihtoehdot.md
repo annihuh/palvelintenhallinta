@@ -10,7 +10,26 @@
 ### Control Windows with Salt
 https://terokarvinen.com/2018/control-windows-with-salt/
 
-- 
+- Käytä Windowsissa uusimpia päivityksiä
+- Samoin masterilla, aina sama tai uudempi versio kuin orjalla
+- Asentaessa Windowsille orjaa-ohjelmaa useimmissa tapauksissa amd64 ja python ovat toimivimmat valinnat versiota valikoidessa
+- Muista uniikki nimi tehdessä
+- Saltilla voidaan komentaa Windowsia niin kuin Linuxiakin, toki Windows on perinteisesti monimutkaisempi
+- Salt toimii paikallisesti Windowsissa
+- Sekä serverinä
+
+### Harjoitus 6 - Windows - 10.05.2021
+https://johanlindell.fi/palvelintenhallinta#h6
+
+- Aluksi asenna sovellus käsin > testaa > poista > todettu, että toimii
+- Asennetaan Salt minionille
+- Hyväksytään minioni masterilla (avaimet)
+- Luodaan init.sls /srv/salt/-polkuun > sisältö, joka vaikuttaa Windows-minioniin
+- Ajetaan saltilla
+- Tarkistetaan minionilta toimivuus
+- Gitin asennus > winrepo
+- Sls-tiedostoon muutos, että se asentaa toivotun sovelluksen
+- Aja tiedosto ja tarkista lopputulos
 
 ## a) Asenna Salt Windowsille
 
