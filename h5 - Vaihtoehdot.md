@@ -99,6 +99,6 @@ Löysin vastauksen tähän tutkimistani raporteista. Eli siis määrittelytiedos
           base:
             - /srv/salt/
     
-Muutosten jälkeen ajoin tilan `salt-call --local state.apply state` ja sain ilmoituksen, että asennus onnistui. Kokeilin avata init.sls tiedoston microlla `micro init.sls`. Micro toimii.
+Muutosten jälkeen ajoin tilan `salt-call --local state.apply state` ja sain ilmoituksen, että asennus onnistui. Kokeilin avata init.sls tiedoston microlla `micro .\init.sls`. Micro toimii.
 
 <img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/235544167-e7c34892-1a58-43c4-8561-5a9fa79114fa.png">
