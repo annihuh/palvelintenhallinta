@@ -68,3 +68,4 @@ Skirpti toimii!
 
 ## d) Installed
 
+Yritän myöhemmin uudestaan.
