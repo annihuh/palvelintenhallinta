@@ -68,4 +68,39 @@ Skirpti toimii!
 
 ## d) Installed
 
-Yritän myöhemmin uudestaan.
+Tein tämän osion palautuksen jälkeen. Vinkkiä otin muiden kurssilaisten rapsoista: https://github.com/R01-P4R/Palvelinten-Hallinta-2023-kev-t/blob/main/H5.md ja https://github.com/hannagrn/palvelinten-hal/blob/main/h5.md.
+
+Latasin ensimmäiseksi micron zip-tiedoston osoitteesta https://github.com/zyedidia/micro/releases/tag/v2.0.11. Valitsin micron Windowsille: `micro-2.0.11-win64.zip` ja purin latauksen downloads kansiossa. Sisältä löytyi micro sovellus, jonka asennan tässä tehtävässä. Tämän jälkeen loin uuden hakemistopolun `/srv/salt/state`, jonka sisälle kopioin micron.
+
+<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/235536158-4d0b871c-2881-40d8-8a83-533bab163023.png">
+
+Tämän jälkeen loin init.sls tiedoston, jonka sisältö on tämä:
+
+    C:\Users\annij\Downloads\micro-2.0.11-win64\micro-2.0.11\micro.exe:
+      file.managed:
+        - source: "salt://state/micro.exe"
+
+Ylin rivi on se mihin mikro asennetaan, toinen rivi tekee halutulle tiedostolle jotain (kopioidaan paikasta toiseen), kolmas kertoo, mistä kopioidaan. Sen jälkeen ajoin komennon:
+
+    salt-call --local state.apply state
+
+Sain virheilmoituksen:
+
+    local:
+        Data failed to compile:
+    ----------
+        No matching sls found for 'state' in env 'base'
+ 
+Löysin vastauksen tähän tutkimistani raporteista. Eli siis määrittelytiedostossa on väärät määritelmät, jonka takia tiloja etsitään masterilta eikä paikallisesti. Menin siis sijaintiin `C:\ProgramData\Salt Project\Salt\conf\minion` ja muokkasin tiedostoa minion poistamalla kommenttimerkkejä alusta () ja vaihtamalla remote > local:
+
+    (#) file_client: (remote) local 
+    
+    (#) file_roots:
+          base:
+            - /srv/salt/
+    
+Muutosten jälkeen ajoin tilan `salt-call --local state.apply state` ja sain ilmoituksen, että asennus onnistui. Kokeilin avata init.sls tiedostin microlla `.\micro init.sls`. Micro toimii.
+
+<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/235542189-9dab4258-648b-4ab5-83f9-7ac652201c0b.png">
+
+Nyt jälkeenpäin ajateltuna olisi ehkä kannattanut kopioida micro toiseen paikkaan.
