@@ -44,8 +44,10 @@ Skirpti toimii!
 
 ## d) Installed
 
-Etsin ohjelman Notepad++:n omilta sivuilta ja valitsin uusimman version. Asensin sen koneelleni. Asennuksen jälkeen kopioin notepad++.exe:n kansioon `C:/Windows/System32/` kansiosta `C:/Program Files/Notepad++/` komennolla:
+Loin kansion `C:/Salt/states` ja sinne lisäsin `init.sls` tiedoston. Sen sisältö on tässä:
 
-    Copy-Item .\notepad++.exe 'C:\Windows\System32\'
+    Copy notepad++:
+      file.managed:
+        - name: C:/Salt/
+        - source: C:/Program Files/Notepad++/notepad++.exe
 
-Tarkistin vielä onnistuiko kopiointi menemällä kohdekansioon.
