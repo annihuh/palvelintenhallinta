@@ -100,6 +100,9 @@ KESKEN
 
 ## Lähteet
 https://www.cyberciti.biz/faq/how-to-configure-firewall-with-ufw-on-ubuntu-20-04-lts/
+
 https://github.com/kri-ku/my_first_salt/blob/master/raportti.md
+
 https://docs.saltproject.io/en/getstarted/config/functions.html
+
 https://github.com/jullegrigori/Palvelinten-hallinta/blob/main/h7b.md
