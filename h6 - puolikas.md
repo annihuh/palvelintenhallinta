@@ -1,10 +1,14 @@
 # h6 - Puolikas
-    Valmiustaso: kesken
+
+    Valmiustaso: kesken (aplha)
+    Projektin tarkoitus on tutustua UFW:n toimintaan ja sen automatisointiin Saltilla.
 
 ## Rauta
+
     speksit tähän
 
 ## Käsin
+
 Projektissani asennan UFW:n eli Uncomplicated Firewallin isäntä-orja-arkkitehtuuria käyttäville koneille salttia käyttäen. Aloitin asentamisen sillä, että käytin kurssin alussa annettua Vagrantfile-tiedostoa, joka määrittelee isännän ja orjien tietoja. Muutin hieman koneiden nimiä: `t001 > a001` ja käynnistin ne komennolla `vagrant up`. Kirjauduin amaster koneelle `vagrant ssh amaster`. Ajoin komennon `sudo salt-key -A` ja hyväksyin avaimet a001 ja a002. Nyt ympäristö on valmis käytettäväksi.
 
 Jatkoin UFW:n asentamiseen amasterilla. Varmistin, että kaikki on päivitetty ajamalla komennon `sudo apt-get update`. Sen jälkeen asensin, käynnistin ja katsoin onko UFW päällä.
