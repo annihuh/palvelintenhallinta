@@ -95,6 +95,19 @@ Seuraavaksi loin kansion, johon lisäsin tilan: `sudo mkdir -p /srv/salt/mini`. 
         - reguire:
           - cmd: install ufw
 
+Ajoin komennon
+
+    sudo salt 'a001' state.apply mini test=True
+
+Josta tuli ilmoitus:
+
+    a001:
+        Minion did not return. [No response]
+        The minions may not have all finished running and any remaining minions will return upon completion. To look up the return data for this job later, run the following command:
+
+        salt-run jobs.lookup_jid 20230508142653704469
+    ERROR: Minions returned with non-zero exit code
+
 KESKEN
 
 
