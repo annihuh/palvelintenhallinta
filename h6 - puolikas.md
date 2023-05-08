@@ -1,7 +1,8 @@
 # h6 - Puolikas
 
-    Valmiustaso: kesken (aplha)
-    Projektin tarkoitus on tutustua UFW:n toimintaan ja sen automatisointiin Saltilla.
+Valmiustaso: kesken (aplha)
+
+Projektin tarkoitus on tutustua UFW:n toimintaan ja sen automatisointiin Saltilla.
 
 ## Rauta
 
