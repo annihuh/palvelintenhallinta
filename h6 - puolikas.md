@@ -1,6 +1,6 @@
 # h6 - Puolikas
 
-Valmiustaso: kesken (aplha)
+Valmiustaso: kesken (alpha)
 
 Projektin tarkoitus on tutustua UFW:n toimintaan ja sen automatisointiin Saltilla.
 
