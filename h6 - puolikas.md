@@ -95,18 +95,35 @@ Seuraavaksi loin kansion, johon lisäsin tilan: `sudo mkdir -p /srv/salt/mini`. 
         - reguire:
           - cmd: install ufw
 
-Ajoin komennon
+Ajoin komennon, jonka tarkoitus on vain testata menisikö tilat läpi oikeassa tapauksessa. En halunnut vielä ajaa ns. oikeaa tilaa ennen kuin olin varma, että tiedosto on tehty oikein. Komento:
 
     sudo salt 'a001' state.apply mini test=True
 
-Josta tuli ilmoitus:
+Siitä tuli virheilmoitus:
 
-    a001:
-        Minion did not return. [No response]
-        The minions may not have all finished running and any remaining minions will return upon completion. To look up the return data for this job later, run the following command:
+<img width="auto" alt="image" src="https://user-images.githubusercontent.com/101214286/236854004-38becafb-76bb-43aa-a30d-7ffb7cb553b3.png">
 
-        salt-run jobs.lookup_jid 20230508142653704469
-    ERROR: Minions returned with non-zero exit code
+Jonka totesin johtuvan siitä, että Saltin käyttämät portit 4505 ja 4506 ovat estettyinä. Lisäsin siis vielä manuaalisesti nämä portit toimiviksi ja päivitin listan.
+
+    sudo ufw allow 4505/tcp && sudo ufw allow 4506/tcp
+    sudo ufw reload
+ 
+Päivittynyt taulukko näytti tältä:
+
+    Status: active
+
+    To                         Action      From
+    --                         ------      ----
+    OpenSSH                    ALLOW       Anywhere
+    23/tcp                     DENY        Anywhere
+    4505/tcp                   ALLOW       Anywhere
+    4506/tcp                   ALLOW       Anywhere
+    OpenSSH (v6)               ALLOW       Anywhere (v6)
+    23/tcp (v6)                DENY        Anywhere (v6)
+    4505/tcp (v6)              ALLOW       Anywhere (v6)
+    4506/tcp (v6)              ALLOW       Anywhere (v6)
+
+Kokeilin ajaa edellisen komennon uudestaa ja vastaus tuli normaalisti. Nyt pääsen tutkimaan, mitkä kohdat on tehty oikein.
 
 KESKEN
 
