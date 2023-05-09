@@ -69,22 +69,10 @@ Tämä tarkoittaa sitä, että UFW:n konfiguraatiot on onnistuneet ja Telnet-yht
 
 ## Automatisointi
 
-Seuraavaksi loin kansion, johon lisäsin tilan: `sudo mkdir -p /srv/salt/mini`. Komento siis luo pääkäyttäjän oikeuksien avulla mini-kansion annettuun sijaintiin ja kaikki puuttuvat kansiot sen edeltä. Sinne lisään tiedoston init.sls komennolla `sudoedit init.sls`. Alla tiedoston sisältö:
+Seuraavaksi loin kansion, johon lisäsin tilan: `sudo mkdir -p /srv/salt/mini`. Komento siis luo pääkäyttäjän oikeuksien avulla mini-kansion annettuun sijaintiin ja kaikki puuttuvat kansiot sen edeltä. Sinne lisään tiedoston init.sls komennolla `sudoedit init.sls`. Lisäsin vähän sisältöä:
 
-    pkg.installed:
-      - name: ufw
-
-    install ssh-server:
-      pkg.installed:
-        - name: openssh-server
-      service.running:
-        - name: openssh-server
-
-    install ssh-client:
-      pkg.installed:
-        - name: openssh-client
-      service.running:
-        - name: openssh-client
+    ufw:
+      pkg.installed
 
 Ajoin komennon, jonka tarkoitus on vain testata menisikö tilat läpi oikeassa tapauksessa. En halunnut vielä ajaa ns. oikeaa tilaa ennen kuin olin varma, että tiedosto on tehty oikein. Komento:
 
@@ -114,7 +102,7 @@ Päivittynyt taulukko näytti tältä:
     4505/tcp (v6)              ALLOW       Anywhere (v6)
     4506/tcp (v6)              ALLOW       Anywhere (v6)
 
-Kokeilin ajaa edellisen komennon uudestaa ja vastaus tuli normaalisti. Nyt pääsen tutkimaan, mitkä kohdat on tehty oikein.
+Kokeilin ajaa edellisen komennon uudestaa ja vastaus tuli normaalisti.
 
 KESKEN
 
