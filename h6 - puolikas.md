@@ -86,20 +86,6 @@ Seuraavaksi loin kansion, johon lisäsin tilan: `sudo mkdir -p /srv/salt/mini`. 
       service.running:
         - name: openssh-client
 
-    allow ssh:
-      cmd.run:
-        - name: ufw allow ssh
-        - unless: ufw status verbose | grep '22.*ALLOW.*Anywhere'
-        - reguire:
-          - cmd: install ufw
-
-    deny telnet:
-      cmd.run:
-        - name: ufw deny telnet
-        - unless: ufw status verbose | grep '23.*DENY.*Anywhere'
-        - reguire:
-          - cmd: install ufw
-
 Ajoin komennon, jonka tarkoitus on vain testata menisikö tilat läpi oikeassa tapauksessa. En halunnut vielä ajaa ns. oikeaa tilaa ennen kuin olin varma, että tiedosto on tehty oikein. Komento:
 
     sudo salt 'a001' state.apply mini test=True
