@@ -2,7 +2,7 @@
 
 Valmiustaso: kesken (alpha)
 
-Projektin tarkoitus on tutustua UFW:n toimintaan ja sen automatisointiin Saltilla.
+Projektin tarkoitus 
 
 ## Rauta
 
